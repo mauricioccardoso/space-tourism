@@ -1,0 +1,63 @@
+:root {
+  --background-color: #0b0d17;
+  --color-primary: #ffffff;
+  --color-secondary: #d0d6f9;
+
+  --font-family: 'Bellefair', serif;
+  --font-family-secondary: 'Barlow Condensed', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  @media (max-width: 1080px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+
+  @media (max-width: 720px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+
+  background-image: url('../assets/home-world.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body,
+input,
+button {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+h5,
+h6 {
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}

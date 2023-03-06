@@ -1,0 +1,64 @@
+.headerNavbar {
+  height: 5rem;
+  margin: 3rem 0 0 3rem;
+}
+
+.headerContent {
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+
+  hr {
+    width: 30vw;
+    margin-right: -200px;
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+  nav {
+    font-family: var(--font-family-secondary);
+    font-weight: 400;
+    letter-spacing: 2.7hpx;
+
+    height: 5rem;
+    width: 55vw;
+
+    background-color: #ffffff1f;
+    backdrop-filter: blur(40.7px);
+    -webkit-backdrop-filter: blur(40.7px);
+
+    a {
+      display: inline-block;
+      margin-left: 3rem;
+      height: 5rem;
+      line-height: 5rem;
+      text-decoration: none;
+
+      transition: opacity 0.25s;
+
+      &:first-child {
+        margin-left: 7.5rem;
+      }
+
+      &:hover {
+        border-bottom: 3px solid var(--color-primary);
+        opacity: 0.5;
+      }
+
+      &.active {
+        border-bottom: 3px solid var(--color-primary);
+      }
+
+      strong {
+        margin-right: 0.7rem;
+      }
+    }
+  }
+}
